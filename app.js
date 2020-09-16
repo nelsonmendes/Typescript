@@ -1,4 +1,4 @@
-function add(n1, n2) {
-    return n1 + n2;
+function add(n1, n2, cb) {
+    cb(n1 + n2);
 }
-console.log(add(1, 2));
+add(1, 2, function (result) { return console.log(result); });
